@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with logo */
+
+header {
+    display: flex;
+    background-image: url(https://th.bing.com/th/id/R.c98a630219cfe688adbf3ca148012e36?rik=ZBx2rPmInmw%2f8Q&pid=ImgRaw&r=0);
+    background-position: 25% 75%;
+    height: 125px;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    max-width: 100%;
+}
+
+.logo img {
+    flex: 1;
+    height: 40px;
+    max-width: 400px;
+}
+
+.accountlogin {
+    padding-top: 20px;
+    padding-right: 20px;
+    color: whitesmoke;
+}
+
+.loginsignup {
+    flex: 1;
+    border: 3px solid white;
+    padding: 3px;
+    font-family: 'Bahnschrift SemiBold', sans-serif
+}
+
+/* Navigation bar */
+
+ul {
+    display: flex;
+    list-style: none;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li {
+    font-size: 150%;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 14px #F1EDF1;
+}
+
+.bglink {
+    background: linear-gradient(0deg, rgba(49,49,52,1) 0%, rgba(171,171,179,1) 49%, rgba(42,42,42,1) 100%);
+}
+
+/* Main body of webpage */
+
+body {
+    background-image: url(https://lucky7webdesign.com/wp-content/uploads/2017/12/black-dot-background.jpg);
+    height: 100%;
+}
+
+body main {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    gap: 20px;
+}
+
+.video h3 {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 15px #bf0202;
+}
+
+.video .swvid {
+    box-shadow: 0px 0px 15px #171717;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.announcements {
+    flex: auto;
+    display: flex;
+}
+
+.announcements h3 {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 15px #bf0202;
+}
+
+.horn {
+    width: 100px;
+    height: 100px;
+}
