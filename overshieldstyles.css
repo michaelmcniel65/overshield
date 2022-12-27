@@ -69,17 +69,25 @@ body {
     height: 100%;
 }
 
-body main {
-    display: flex;
-    flex-flow: wrap;
+main {
+    text-align: center;
 }
 
+.mainContent {
+    display: inline-block;
+}
+
+/* Video of the Week block */
+
 .video {
-    flex: 1;
     display: flex;
     flex-direction: column;
     padding: 5vh;
     gap: 20px;
+    background-color: rgb(72, 72, 78);
+    border-radius: 20% 20% 5% 5%;
+    box-shadow: 0px 0px 15px #171717;
+    margin: 20px;
 }
 
 .video h3 {
@@ -87,6 +95,7 @@ body main {
     color: whitesmoke;
     font-family: 'Bahnschrift SemiBold', sans-serif;
     text-shadow: 0px 0px 15px #bf0202;
+    padding-bottom: 20px;
 }
 
 .video .swvid {
@@ -95,9 +104,19 @@ body main {
     max-height: 100%;
 }
 
+/* Announcements block */
+
 .announcements {
-    flex: auto;
-    display: flex;
+    display: inline-block;
+}
+
+.announcementFlex {
+    display: grid;
+    grid-template: 60px 150px / 150px 200px;
+    padding: 5vh;
+    background-color: rgb(72, 72, 78);
+    border-radius: 20% 5% 20% 5%;
+    box-shadow: 0px 0px 15px #171717;
 }
 
 .announcements h3 {
@@ -105,9 +124,50 @@ body main {
     color: whitesmoke;
     font-family: 'Bahnschrift SemiBold', sans-serif;
     text-shadow: 0px 0px 15px #bf0202;
+    grid-column: span 2;
 }
 
 .horn {
     width: 100px;
     height: 100px;
+    grid-column: span 1;
+}
+
+.announcements p {
+    color: whitesmoke;
+    grid-column: span 1;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 15px #171717;
+}
+
+/* Top 10 Games Block */
+
+.topGames {
+    display: inline-block;
+    padding: 20px;
+}
+
+.topGamesFlex {
+    display: grid;
+    grid-template: 50px 300px / 250px;
+    padding: 5vh;
+    justify-items: center;
+    background-color: rgb(72, 72, 78);
+    border-radius: 5% 20% 5% 20%;
+    box-shadow: 0px 0px 15px #171717;
+}
+
+.topGamesFlex h3 {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 15px #bf0202;
+}
+
+.topGamesFlex ol {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    list-style: circle;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    text-shadow: 0px 0px 15px #171717;
 }
